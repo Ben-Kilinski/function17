@@ -18,6 +18,9 @@
                 if (num < MinNumber){
                     MinNumber = num;
                 }
+                if (num <= 0){
+                    break;
+                }
             }
             return {MinNumber, MaxNumber}
             
