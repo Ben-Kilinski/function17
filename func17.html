@@ -7,16 +7,23 @@
 </head>
 <body>
     <script>
-        function getMaxNumber (){
-            var temp = 0;
+        function getMaxMinNumber (){
+            var MaxNumber = 0;
+            var MinNumber = 0;
             for (var i = 0; i <5; i++){
                 var num = +prompt("insert a number");
-                if (num > temp){
-                    temp = num;
+                if (num > MaxNumber){
+                    MaxNumber = num;
+                }
+                if (num < MinNumber){
+                    MinNumber = num;
                 }
             }
-            return temp; 
+            return {MinNumber, MaxNumber}
+            
         }
+        
+        
     </script>
 </body>
 </html>
